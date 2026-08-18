@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///D:/_____BackUp_Michael/News/News.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Channels 新闻直播</title>
+    <link href="./News-1_files/css2" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --hover-bg: rgba(51, 65, 85, 0.8);
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            text-align: center;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+            letter-spacing: -0.02em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1400px;
+        }
+
+        .grid-item {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px) scale(1.03);
+            background: var(--hover-bg);
+            border-color: rgba(56, 189, 248, 0.5);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(56, 189, 248, 0.2);
+            z-index: 10;
+        }
+
+        .grid-item.empty {
+            background: rgba(30, 41, 59, 0.3);
+            border-color: rgba(255, 255, 255, 0.03);
+            pointer-events: none;
+            box-shadow: none;
+        }
+
+        .grid-item img {
+            max-width: 85%;
+            max-height: 50%;
+            object-fit: contain;
+            margin-bottom: 16px;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4));
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1) translateY(-2px);
+        }
+
+        .grid-item .title {
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            color: #e2e8f0;
+            transition: color 0.3s ease;
+        }
+
+        .grid-item:hover .title {
+            color: #fff;
+        }
+
+        @media (max-width: 1200px) {
+            .grid-container {
+                gap: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>News Channels 新闻直播</h1>
+    <div class="grid-container">
+        <a href="https://www.youtube.com/watch?v=vr3XyVCR4T0" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/中天電視.PNG" alt="中天電視CtiTv 52" loading="lazy">
+            <span class="title">中天電視CtiTv 52</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=m_dhMSvUCIc" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/TVBS.png" alt="TVBS NEWS" loading="lazy">
+            <span class="title">TVBS NEWS</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=2mCSYvcfhtc" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/TVBS 55.png" alt="TVBS NEWS 55" loading="lazy">
+            <span class="title">TVBS NEWS 55</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ylYJSBUgaMA" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/民視新聞網.png" alt="民視新聞網 53 Formosa TV News network" loading="lazy">
+            <span class="title">民視新聞網 53 Formosa TV News network</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=QsGswQvRmtU" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/三立新聞台.png" alt="三立新聞台 Taiwan SETNEWS Live Channel" loading="lazy">
+            <span class="title">三立新聞台 Taiwan SETNEWS Live Channel</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=6IquAgfvYmc" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/寰宇新聞.png" alt="寰宇新聞" loading="lazy">
+            <span class="title">寰宇新聞</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=w87VGpgd90U" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/寰宇新聞台.png" alt="寰宇新聞 (台湾台)" loading="lazy">
+            <span class="title">寰宇新聞 (台湾台)</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=TCnaIE_SAtM" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/中視新聞.png" alt="中視新聞" loading="lazy">
+            <span class="title">中視新聞</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=xL0ch83RAK8" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/台視新聞.png" alt="台視新聞 TTV NEWS" loading="lazy">
+            <span class="title">台視新聞 TTV NEWS</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=V1p33hqPrUk" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/東森新聞 51.png" alt="東森新聞 51 Taiwan EBC" loading="lazy">
+            <span class="title">東森新聞 51 Taiwan EBC</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=1I2iq41Akmo" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/東森財經新聞57.png" alt="東森財經新聞 57" loading="lazy">
+            <span class="title">東森財經新聞 57</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=wM0g8EoUZ_E" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/华视新闻 1 52.png" alt="华视新闻 1" loading="lazy">
+            <span class="title">华视新闻 1</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=meHTKm4XBS8" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/华视新闻 2.png" alt="华视新闻 2" loading="lazy">
+            <span class="title">华视新闻 2</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=k0uJVhYX12Y" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/怪奇聊天室.png" alt="【怪奇聊天室】57怪奇物語頻道" loading="lazy">
+            <span class="title">【怪奇聊天室】57怪奇物語頻道</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=vNVp6bxkL1c" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/CCTV4_亚洲.png" alt="CCTV4 中文国际（亚洲）" loading="lazy">
+            <span class="title">CCTV4 中文国际（亚洲）</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=PiSwAy-blvA" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/CCTV4_美洲.png" alt="CCTV4 中文国际（美洲）" loading="lazy">
+            <span class="title">CCTV4 中文国际（美洲）</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=PbuVhkvaAF4" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/CCTV13.png" alt="CCTV13 新闻频道" loading="lazy">
+            <span class="title">CCTV13 新闻频道</span>
+        </a>
+        <a href="https://www.youtube.com/watch?v=fN9uYWCjQaw&amp;pp=0gcJCd4KAYcqIYzv" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/凤凰卫视.png" alt="凤凰卫视" loading="lazy">
+            <span class="title">凤凰卫视</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/tv1" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/TV1.png" alt="TV 1" loading="lazy">
+            <span class="title">TV 1</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/tv2" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/TV2.png" alt="TV 2" loading="lazy">
+            <span class="title">TV 2</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/beritartm" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/Berita_RTM.png" alt="Berita RTM" loading="lazy">
+            <span class="title">Berita RTM</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/okey" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/Okey.png" alt="Okey" loading="lazy">
+            <span class="title">Okey</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/sukanrtm" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/Sukan_RTM.png" alt="SUKAN RTM" loading="lazy">
+            <span class="title">SUKAN RTM</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/dewannegara" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/Dewan_Negara.png" alt="Dewan Negara" loading="lazy">
+            <span class="title">Dewan Negara</span>
+        </a>
+        <a href="https://rtmklik.rtm.gov.my/live/dewanrakyat" class="grid-item" target="_blank" rel="noopener noreferrer">
+            <img src="./News-1_files/Dewan_Rakyat.png" alt="Dewan Rakyat" loading="lazy">
+            <span class="title">Dewan Rakyat</span>
+        </a>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+        <div class="grid-item empty"></div>
+    </div>
+
+</body></html>
